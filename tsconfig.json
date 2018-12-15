@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "outFile": "./dist/index.js",
+    "module": "amd",
+    "target": "es5",
+    "allowJs": true,
+    "removeComments": true,
+    "lib": ["dom", "es6"]
+  }
+}
