@@ -1,14 +1,16 @@
 # saber-connect
 
+> a connect func.
+
 ```bash
 npm install
 
 npm start
+
+npm test
 ```
 
 ```js
-const connect = req => task => connect(task(req))
-
 const origin = 0
 
 const task = req => req + 1
