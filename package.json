@@ -1,19 +1,14 @@
 {
   "name": "saber-connect",
   "version": "0.0.1",
-  "description": "a connect func",
+  "description": "fp tests",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Saber2pr/saber-connect.git"
   },
   "author": "saber2pr",
   "license": "ISC",
-  "main": "./lib/index.js",
   "scripts": {
-    "test": "node ./lib/test/test.js",
-    "start": "tsc --watch"
-  },
-  "devDependencies": {
-    "typescript": "^3.2.1"
+    "test": "node ./src/index.js"
   }
 }

@@ -1,22 +1,25 @@
 # saber-connect
 
-> a connect func.
+> fp tests.
 
 ```bash
-npm install
-
-npm start
-
 npm test
 ```
 
 ```js
-const origin = 0
+const sum = num => (num > 0 ? num + sum(num - 1) : num)
 
-const task = req => req + 1
+const sumR = sum => num => (num > 0 ? num + sum(sum)(num - 1) : num)
 
-const output = res => console.log(res)
+console.log(
+  (f => f(f))(sum => num => (num > 0 ? num + sum(sum)(num - 1) : num))(3)
+) // 6
 
-// example
-connect(origin)(task)(task)(task)(task)(task)(output)
+console.log(
+  (f => f(f))(sum => num => (num > 0 ? num + (f => f(f))(sum)(num - 1) : num))(
+    3
+  )
+) // 6
+
+console.log(sumR(sumR)(3))
 ```
